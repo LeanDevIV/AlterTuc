@@ -1,0 +1,46 @@
+*{
+ outline: red solid 2px; 
+}
+body, html {
+  height: 100%;}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, auto);
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  background-color: #222;
+}
+
+.container > div {
+  background-color: #444;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+  
+  .imagenprincipal { 
+    grid-area: imagen principal;
+    width: 200px;
+   }
+  
+  .segundaimg { grid-area: segundaimg; }
+  
+  .terceraimg { grid-area: terceraimg; }
+  
+  .cuartaimg { grid-area: cuartaimg; }
+  
+  .quintamg { grid-area: quintamg; }
+  
+  .sextaimg { grid-area: sextaimg; }
+  

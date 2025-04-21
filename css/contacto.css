@@ -1,0 +1,129 @@
+.mainContacto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    background-color: #1e1e2f;
+    color: #fff;
+    font-family: "Reddit Sans", sans-serif;
+  }
+  
+  /* Enlaces */
+  .enlacesContacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 200px;
+    gap: 15px;
+    
+  }
+  
+  .enlacesContacto button {
+    background-color: #341a645e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+
+  }
+  
+  .enlacesContacto button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, darkslategray, #242323);
+  }
+  
+  .enlacesContacto a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .enlacesContacto a img{
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* Formulario */
+  .formContacto {
+    background-color: #341a645e;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+  .formContacto h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .formContacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formContacto input,
+  .formContacto textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .formContacto textarea {
+    resize: none;
+    min-height: 100px;
+  }
+  
+  .formContacto button {
+    background: linear-gradient(45deg, darkslategray, #242323);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .formContacto button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, white, darkslategray);
+    color: black;
+  }
+  
+  /* 🖥️ Media Query para escritorio */
+  @media (min-width: 768px) {
+    .mainContacto {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 80vh;
+      padding: 50px;
+    }
+  
+    .primerSector {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .enlacesContacto {
+      flex-direction: column;
+      position: sticky;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+  
+    .segundoSector {
+      width: 60%;
+    }
+  }
+  
